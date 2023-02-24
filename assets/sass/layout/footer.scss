@@ -1,0 +1,22 @@
+footer {
+    background-color: $gris-sombre;
+    padding: 1.6em;
+    display: flex;
+    flex-direction: column;
+
+    & h1 {
+        font-family: 'Shrikhand', cursive;
+        color: white;
+        font-size: 1em;
+        padding-bottom: 2em;
+    }
+
+    & a {
+        color: white;
+        padding-bottom: 1em;
+    }
+
+    & i {
+        padding-right: 0.4em;
+    }
+}

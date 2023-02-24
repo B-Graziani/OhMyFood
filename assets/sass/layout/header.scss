@@ -1,0 +1,26 @@
+header {
+
+    @extend %grid-center;
+    padding: 1em;
+
+    & h1 {
+        font-family: 'Shrikhand', cursive;
+    }
+
+    & .header-link {
+        position: relative;
+        width: 100vw;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            position: absolute;
+            left: 1em;
+            font-size: 1.6em;
+            color: black;
+        }
+    }
+}

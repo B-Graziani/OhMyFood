@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+@import './utils/_variables';
+@import './utils/keyframe';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+//components
+@import './components/btn';
+@import './components/card';
+@import './components/like';
+
+@import './layout/header';
+@import './layout/main';
+@import './layout/footer';
