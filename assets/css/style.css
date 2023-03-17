@@ -65,16 +65,22 @@ main .restaurant ul, main .menu ol {
   justify-content: center;
   align-items: center;
   position: relative;
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
 }
 .card-fonctionnement:hover {
+  transition: all 0.5s ease;
   background-color: #F5EDFF;
+}
+.card-fonctionnement:hover i {
+  color: #9356DC;
 }
 .card-fonctionnement h3 {
   padding-left: 1em;
 }
 .card-fonctionnement span {
   position: absolute;
-  background-color: #9357DC;
+  background-color: #9356DC;
   left: -1em;
   height: 2em;
   width: 2em;
@@ -86,6 +92,7 @@ main .restaurant ul, main .menu ol {
 }
 .card-fonctionnement i {
   padding-left: 1em;
+  color: #7E7E7E;
 }
 
 .card-restaurant {
@@ -102,6 +109,9 @@ main .restaurant ul, main .menu ol {
 .card-restaurant img {
   width: 100%;
   border-radius: 1em 1em 0 0;
+  height: 80%;
+  max-height: 14em;
+  object-fit: cover;
 }
 .card-restaurant .container {
   padding: 0.8em 0.8em;
@@ -121,10 +131,11 @@ main .restaurant ul, main .menu ol {
 
 .fa-regular {
   font-weight: 400;
+  transition: all 1s ease;
 }
 .fa-regular:hover {
+  transition: all 1s ease;
   font-weight: 600;
-  background-color: black;
   background-image: linear-gradient(0deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -206,6 +217,7 @@ main .localisation {
 main .localisation h2 {
   display: flex;
   flex-direction: row-reverse;
+  font-size: 0.8em;
 }
 main .localisation i {
   padding: 0 0.5em 0 0;
@@ -291,11 +303,16 @@ main .menuResto__carte ul .list-item {
 }
 main .menuResto__carte ul .list-item h4 {
   margin: 0 0 1em 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 70%;
+  overflow: hidden;
+  transition: all 1s;
 }
 main .menuResto__carte ul .list-item p {
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 85%;
+  width: 70%;
   overflow: hidden;
   transition: all 1s;
 }

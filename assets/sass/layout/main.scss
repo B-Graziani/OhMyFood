@@ -14,6 +14,7 @@ main {
         & h2 {
             display: flex;
             flex-direction: row-reverse;
+            font-size: 0.8em;
         }
 
         & i {
@@ -124,12 +125,17 @@ main {
 
                     & h4 {
                         margin: 0 0 1em 0;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: 70%;
+                        overflow: hidden;
+                        transition: all 1s;
                     }
 
                     & p {
                         text-overflow: ellipsis;
                         white-space: nowrap;
-                        width: 85%;
+                        width: 70%;
                         overflow: hidden;
                         transition: all 1s;
                     }
